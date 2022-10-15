@@ -28,6 +28,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-size:100%;
 	font-weight:normal;
 }
+
 /* container */
 .container {
     width: 100%;
@@ -133,11 +134,12 @@ main {
 
 /* about */
 .about {
-    margin: 140px 0;
+    margin: 220px 0;
 }
 .about-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
+   
 }
 .about-text {
     align-self: center;
@@ -155,7 +157,106 @@ main {
     font-weight: 400;
     font-size: 28pt;
 }
-.about-img {
+.about-images {
     align-self: center;
+    
+}
+.about-item {
+    width: 506px;
+    background: #fcc302;
+    
+
 }
 
+.about-img {
+   
+    display: block;
+    transform: translate3d(25px,-25px,0);
+}
+/*services*/
+.services {
+    background: #fcc302;
+    color: #fff;
+    padding: 100px 0;
+}
+.service-container {
+
+}
+.services-text {
+    text-align: center;
+}
+.services-title {
+    color: #fff;
+    font-size: 50pt;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+
+}
+.services-info {
+    color: #fff;
+    font-size: 16pt;
+    font-family: 'Poppins', sans-serif;
+}
+.services-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px,1fr));
+    gap: 40px;
+    margin: 90px 0 0 0;
+}
+.services-count {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+.services-img {
+    border: 7px solid #fff;
+    
+}
+.services-type-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30pt;
+    margin: 25px 0;
+}
+.services-type-text {
+    text-align: center;
+}
+/*approach*/
+.approach-container {
+    display: grid;
+    padding: 220px 0;
+    grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
+}
+#approach-dog{
+    transform: translate3d(-25px,-25px,0);
+}
+/*team*/
+.team {
+    color: #fff;
+    background: #fcc302;
+    padding: 140px 0 130px 0;
+}
+
+.up {
+    text-transform: uppercase;
+    font-size: 17pt;
+}
+.team-social{
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.team-item {
+    border-radius: 20px;
+    
+    color: #fff;
+    font-size: 25pt;
+    padding: 10px;
+    transition: font-size .2s linear;
+    
+}
+.team-item:hover {
+    background-color: #313243;
+    font-size: 35pt;
+}
+/*information*/
+.information {}
