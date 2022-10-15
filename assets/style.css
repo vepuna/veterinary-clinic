@@ -307,6 +307,7 @@ main {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 50pt;
+    margin-bottom: 25px;
 }
 .tips-item {
     display: grid;
@@ -327,4 +328,37 @@ main {
 }
 li {
     padding: 5px 0;
+}
+/*footer*/
+footer {
+    background: #343434;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17pt;
+    text-align: center;
+}
+.footer-cont {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 21pt;
+}
+.footer-item {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 21pt;
+}
+
+
+.footer-contact {
+    text-align: right;
+    align-self: center;
+    
 }
