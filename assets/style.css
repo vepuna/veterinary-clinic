@@ -36,7 +36,7 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 auto;
 }
 /* header */
-header {
+.header {
     width: 100%;
     padding: 5px 0;
     background: #daac00;
@@ -210,11 +210,12 @@ main {
     margin: 90px 0 0 0;
 }
 .services-count {
-    
+    display: grid;
     font-family: 'Poppins', sans-serif;
 }
 .services-img {
     border: 7px solid #fff;
+    justify-self: center;
     
     
 }
@@ -256,15 +257,19 @@ main {
     border-radius: 20px;
     
     color: #fff;
-    font-size: 25pt;
+    font-size: 25px;
     padding: 10px;
-    transition: font-size .2s linear;
+    /*transition: font-size .2s linear;*/
+    margin-bottom: 25px;
     
 }
 .team-item:hover {
     background-color: #313243;
-    font-size: 35pt;
+    font-size: 35px;
+    margin-bottom: 15px;
 }
+
+
 /*information*/
 .information {
     background: #00bec9;
