@@ -257,23 +257,24 @@ main {
     border-radius: 20px;
     
     color: #fff;
-    font-size: 25px;
+    font-size: 35px;
     padding: 10px;
-    /*transition: font-size .2s linear;*/
+    transition: transform .2s linear;
     margin-bottom: 25px;
     
 }
 .team-item:hover {
+    
     background-color: #313243;
-    font-size: 35px;
-    margin-bottom: 15px;
+    transform: scale(1.3);
+    
 }
 
 
 /*information*/
 .information {
     background: #00bec9;
-    height: 710px;
+    
 }
 .information-container {
     display: grid;
@@ -289,10 +290,10 @@ main {
 }
 .information-img {
     font-size: 80pt;
-    transition: font-size .2s linear;
+    transition: transform .2s linear;
 }
 .information-img:hover{
-    font-size: 130pt;
+    transform:scale(1.6);
 }
 .information-count {
     font-size: 50pt;
@@ -302,6 +303,7 @@ main {
 }
 /*tips*/
 .tips {
+    background: #00bec9;
     padding: 100px 0;
 }
 .tips-container {
@@ -334,13 +336,73 @@ main {
 li {
     padding: 5px 0;
 }
+/*post*/
+.posts {
+    margin: 130px 0;
+}
+#posts-text {
+    color: #000;
+}
+.posts-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+    gap: 20px;
+
+}
+.post-item {
+    display: grid;
+    width: 360px;
+    margin-top: 45px;
+    transition: box-shadow .2s;
+    align-items: baseline;
+    
+}
+.post-item:hover {
+    box-shadow: 3px 13px 28px 0px rgba(0,0,0,0.17);
+}
+.posts-info {
+    padding: 30px;
+    
+}
+.post-item img {
+    justify-self: center;
+}
+.posts-item-titile{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+.post-item-data {
+    justify-self: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #00bec9;
+    text-transform: uppercase;
+    padding-top: 15px;
+
+}
+.post-item-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 20px 0;
+    
+}
+.post-item-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #00bec9;
+    
+}
 /*footer*/
 footer {
     background: #343434;
 }
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -365,5 +427,13 @@ footer {
 .footer-contact {
     text-align: right;
     align-self: center;
-    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 21pt;
+}
+.footer-header {
+    text-align: center;
+}
+#contact-table {
+    list-style-type:none;
 }
